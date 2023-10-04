@@ -1,0 +1,116 @@
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+
+h1{
+margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .paragraphe{
+    margin: 10px ;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.paragraphe h4 {
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+h4 span { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(49, 40, 40);
+    color: white;
+    padding: 5px;
+    margin: 0;
+}
+
+.paragraphe p {
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.chicken{
+    background-color: rgb(200, 138, 138);
+    border-bottom: 1px solid  rgb(3, 3, 3);
+    border-left: 1px solid  rgb(3, 3, 3);
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.beef{
+    background-color: rgb(252, 125, 41);
+    border-bottom: 1px solid  rgb(3, 3, 3);
+    border-left: 1px solid  rgb(3, 3, 3);
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sushi{
+    background-color: rgb(228, 212, 37);
+    border-bottom: 1px solid  rgb(3, 3, 3);
+    border-left: 1px solid  rgb(3, 3, 3);
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width:570px){
+    .container{
+      flex-direction: column;
+      width: 85%;
+    }
+  }
+
+  @media screen and (min-width:700px) and (max-width:1000px){
+    
+    .container {
+        flex-wrap: wrap;
+    }
+    
+    .chic , .bee, .sus{
+        flex-direction: column;
+        width: 47%;
+    }
+     
+    .sus{
+        width: 100%;
+    }
+
+}
